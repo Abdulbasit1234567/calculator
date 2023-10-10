@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: 10px;
+  }
+  .h1{
+  text-align:center ;
+  
+  }
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #ccec15; /* You can choose the color you prefer */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    background-color: green;
+    width: max-content;
+    padding: 10px;
+    border-radius: 5px;
+    animation-name: bstdev;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+  }
+  
+  .calculator {
+    background-color: #7c3a7e;
+    padding: 15px;
+    border-radius: 30;
+    box-shadow: 10px 10px 30px #aeb8ca, -10px -10px 30px #ffffff;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    outline: solid yellow;
+    animation-name: bstdev;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+  }
+  
+  input {
+    grid-column: span 6;
+    height: 70px;
+    width: 530px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff, inset 5px 5px 12px rgba(0, 0, 0, .16);
+    border: none;
+    border-radius: 15px;
+    color: rgb(70, 70, 70);
+    font-size: 50px;
+    text-align: end;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  
+  button {
+    height: 48px;
+    width: 48px;
+    background-color: rgb(32, 32, 110);
+    color: white; /* Set the text color to white */
+    box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, .16);
+    border: solid rgb(102, 255, 0) 3px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  
+  .equal {
+    width: 530px;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, .16);
+    animation-name: bstdev;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+
+
+@keyframes bstdev{
+    10%{background-color: green;}
+    20%{background-color: blue;}
+
+    30%{background-color: black;}
+    40%{background-color: cornflowerblue;}
+
+    50%{background-color: slategray;}
+    60%{background-color: #7c3a7e;}
+
+    70%{background-color: sandybrown;}
+    80%{background-color: crimson;}
+
+    90%{background-color: darkviolet;}
+    100%{background-color: #22bee6;}
+
+    10%{outline: rgb(128, 30, 0);}
+    20%{outline: rgb(255, 0, 234);}
+
+    30%{outline: rgb(0, 0, 0);}
+    40%{outline: cornflowerblue;}
+
+    50%{outline: rgb(0, 119, 238);}
+    60%{outline: #7c3a7e;}
+
+    70%{outline: sandybrown;}
+    80%{outline: crimson;}
+
+    90%{outline: darkviolet;}
+    100%{outline: #22bee6;}
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CALCULATOR</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+  
+    <div class="calculator">
+       <h2>BSTDEV CALCULATOR</h2>
+      <input type="text" placeholder="0" id="output-screen">
+      <button onclick="clr()">CL</button>
+      <button onclick="del()">DEL</button>
+      <button onclick="myfunction('9')">9</button>
+      <button onclick="myfunction('0')">0</button>
+      <button onclick="myfunction('+')">+</button>
+      <button onclick="myfunction('%')">%</button>
+      <button onclick="myfunction('5')">5</button>
+      <button onclick="myfunction('6')">6</button>
+      <button onclick="myfunction('7')">7</button>
+      <button onclick="myfunction('8')">8</button>
+      <button onclick="myfunction('*')">*</button>
+      <button onclick="myfunction('-')">-</button>
+      <button onclick="myfunction('1')">1</button>
+      <button onclick="myfunction('2')">2</button>
+      <button onclick="myfunction('3')">3</button>
+      <button onclick="myfunction('4')">4</button>
+      <button onclick="myfunction('.')">.</button>
+      <button onclick="myfunction('/')">/</button>
+      <button onclick="calculate()" class="equal">Ans</button>
+    </div>
+  </div>
+
+  <script>
+    let outputscreen = document.getElementById('output-screen');
+
+function myfunction(num) {
+  outputscreen.value += num;
+}
+
+function calculate() {
+  try {
+    outputscreen.value = eval(outputscreen.value);
+  } catch (err) {
+    alert("Invalid");
+  }
+}
+
+function clr() {
+  outputscreen.value = '';
+}
+
+function del() {
+  outputscreen.value = outputscreen.value.slice(0, -1);
+}
+  </script>
+</body>
+</html>
+
